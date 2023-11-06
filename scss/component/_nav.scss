@@ -1,0 +1,50 @@
+.nav{
+    // border: 2px solid orange;
+    padding: 1rem;
+    list-style-type: none;
+    height: 10vh;
+    
+    &-list{
+        text-align: right;
+        
+    }
+    
+    &-item{
+        display: inline;
+        font-size: 1rem;
+        margin-right: 1rem;
+        font-weight: 100;
+        
+        &:hover{
+            scale: 1.05;
+        }
+        
+        
+    }
+    
+    &-link{
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-transform: uppercase; 
+        color: black;
+        // background-color: black;
+        font-family:$fontfamly;
+        letter-spacing: .05rem;
+        text-decoration: none;
+        border-radius: 5px;
+        @include transition() ;
+        
+        &:hover{
+            color: red;
+            // background-color: rgba(#000, 0.7 );
+            // text-shadow: $y-shadow;
+        }
+        
+        &-active{
+            border: 3px solid black;
+            color: white;
+            // background-color:$sari;
+            text-shadow: $b-shadow;
+        }
+    }
+}

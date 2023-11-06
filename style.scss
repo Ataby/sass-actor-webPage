@@ -1,0 +1,9 @@
+@import "./scss/abstract/mixins" , "./scss/abstract/variables";
+
+@import "./scss/base/reset";
+
+@import "./scss/component/footer" , "./scss/component/nav" , "./scss/component/responsive";
+
+@import "./scss/page/about" , "./scss/page/contact" , "./scss/page/home" , "./scss/page/projects";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");

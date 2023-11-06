@@ -1,0 +1,27 @@
+.about-bgImg{
+    border: 2px solid red;
+    @include back-image(50vh , $home-img-path);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .nav{
+        // border: 2px solid red;
+    }
+    
+    .bio {
+        // border: 2px solid red;
+        justify-content: center;
+        
+        h2{ 
+            font-size: 2.3rem;
+            text-shadow: $b-shadow;
+            padding-bottom: 1rem;
+            color: white;
+            font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono","Droid Sans Mono", monospace, monospace;;
+        }
+    }
+}
+
+
+

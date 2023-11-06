@@ -1,0 +1,16 @@
+@mixin transition(){
+    transition: all .3s;
+}
+
+@mixin back-image($height , $url){
+    height: $height;
+    background-image: url($url);
+    background-position: center center;
+    width: 100vw;
+    background-size: cover;
+    
+    // background: linear-gradient( to right, 
+    // rgba(black,0.8) , rgba(black,0.2)
+    // ) , url($url) ;
+
+}
