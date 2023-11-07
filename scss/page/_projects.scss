@@ -1,0 +1,71 @@
+.projects-bgImg{
+    // border: 2px solid red;
+    @include back-image(65vh , $home-img-path);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .bio {
+        // border: 2px solid red;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        .icons{
+            width: 20vw;            
+            i{ 
+                color: black;
+    
+                &:hover{
+                    color: red;
+                    transition-duration: .3s;
+                }
+             }
+            }
+        h2{ 
+            font-size: 2.3rem;
+            text-shadow: $b-shadow;
+            padding-bottom: 1rem;
+            margin-left: 1rem;
+            color: white;
+            font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono","Droid Sans Mono", monospace, monospace;;
+        }
+    }
+
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    // border: 2px solid red;
+    background-color: rgba( #000000,   .8);
+    
+    .films{
+
+        th , td , tr{ 
+            padding: .7rem;
+            font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono","Droid Sans Mono", monospace, monospace;
+            font-weight: 600;
+            color: white;
+            border: 1px solid black;
+        }
+        width: 40vw;
+        border: 1px solid black;
+
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+
+        tr:nth-child(even){
+            background-color: $sari;
+        }
+
+        th{
+            font-size: larger;
+            font-style: italic;
+            text-decoration-line: underline;
+            border: 1px solid black;
+        }
+
+    }
+}

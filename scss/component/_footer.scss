@@ -7,9 +7,21 @@ footer{
     
     .icons{
         padding-right: 2rem;
-        font-size: large;
+        font-size:x-large;
+        margin-top: .5rem;
+        i{ 
+            color: black;
+
+            &:hover{
+                color: red;
+                transition-duration: .3s;
+            }
+         }
         a{
-            margin-right: .9rem;
+            
+            // border: 2px solid red;
+            margin-right: .5rem;
+            // padding-top: .5rem;
             color: white;
             &:hover{
                 color: red;

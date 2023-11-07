@@ -12,10 +12,18 @@ footer {
 }
 footer .icons {
   padding-right: 2rem;
-  font-size: large;
+  font-size: x-large;
+  margin-top: 0.5rem;
+}
+footer .icons i {
+  color: black;
+}
+footer .icons i:hover {
+  color: red;
+  transition-duration: 0.3s;
 }
 footer .icons a {
-  margin-right: 0.9rem;
+  margin-right: 0.5rem;
   color: white;
   text-decoration: none;
 }
@@ -30,15 +38,15 @@ footer .icons a:hover {
 }
 .nav-list {
   text-align: right;
+  transform: scaleY(10px);
+  scale: 1.1rem;
 }
 .nav-item {
   display: inline;
   font-size: 1rem;
   margin-right: 1rem;
   font-weight: 100;
-}
-.nav-item:hover {
-  scale: 1.05;
+  text-shadow: 0px 0px 5px white;
 }
 .nav-link {
   padding: 1rem;
@@ -61,8 +69,7 @@ footer .icons a:hover {
 }
 
 .about-bgImg {
-  border: 2px solid red;
-  height: 50vh;
+  height: 65vh;
   background-image: url("../img/home.jpg");
   background-position: center center;
   width: 100vw;
@@ -72,14 +79,59 @@ footer .icons a:hover {
   justify-content: space-between;
 }
 .about-bgImg .bio {
-  justify-content: center;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.about-bgImg .bio .icons {
+  width: 20vw;
+}
+.about-bgImg .bio .icons i {
+  color: black;
+}
+.about-bgImg .bio .icons i:hover {
+  color: red;
+  transition-duration: 0.3s;
 }
 .about-bgImg .bio h2 {
   font-size: 2.3rem;
   text-shadow: 0px 0px 5px black;
   padding-bottom: 1rem;
+  margin-left: 1rem;
   color: white;
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+.about-container {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  margin: auto;
+  background-color: rgb(49, 49, 49);
+  justify-content: center;
+}
+.about-container .about-job {
+  background-color: #9a9a9a;
+  flex-direction: column;
+  display: flex;
+  align-items: baseline;
+  width: 70vw;
+  height: 45vh;
+  margin-top: 1rem;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+.about-container .par1 {
+  padding-bottom: 1.5rem;
+  justify-content: baseline;
+  border-bottom: 4px solid rgb(214, 183, 55);
+}
+.about-container p {
+  text-indent: 1rem;
+  margin: 0.7rem;
+}
+.about-container p, .about-container h2, .about-container h3, .about-container h6 {
+  color: white;
+  line-height: 1.7rem;
 }
 
 .home-bgImg {
@@ -101,9 +153,9 @@ footer .icons a:hover {
 }
 .home .kursun {
   position: absolute;
-  width: 10%;
-  left: 120px;
-  top: 120px;
+  width: 7%;
+  right: 220px;
+  bottom: 120px;
 }
 .home .f-name, .home .s-name {
   position: absolute;
@@ -132,6 +184,70 @@ footer .icons a:hover {
   right: 4rem;
   color: black;
   margin-top: 0.2rem;
+}
+
+.projects-bgImg {
+  height: 65vh;
+  background-image: url("../img/home.jpg");
+  background-position: center center;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-bgImg .bio {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.projects-bgImg .bio .icons {
+  width: 20vw;
+}
+.projects-bgImg .bio .icons i {
+  color: black;
+}
+.projects-bgImg .bio .icons i:hover {
+  color: red;
+  transition-duration: 0.3s;
+}
+.projects-bgImg .bio h2 {
+  font-size: 2.3rem;
+  text-shadow: 0px 0px 5px black;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.projects .films {
+  width: 40vw;
+  border: 1px solid black;
+}
+.projects .films th, .projects .films td, .projects .films tr {
+  padding: 0.7rem;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  font-weight: 600;
+  color: white;
+  border: 1px solid black;
+}
+.projects .films tr:nth-child(odd) {
+  background-color: gray;
+}
+.projects .films tr:nth-child(even) {
+  background-color: rgb(214, 183, 55);
+}
+.projects .films th {
+  font-size: larger;
+  font-style: italic;
+  text-decoration-line: underline;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
